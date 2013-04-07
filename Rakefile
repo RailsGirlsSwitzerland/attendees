@@ -1,0 +1,2 @@
+task :generate do
+end

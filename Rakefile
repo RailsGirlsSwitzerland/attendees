@@ -84,6 +84,7 @@ task :generate do
   end
 end
 
+# Publishes the content under site to gh-pages branch - you probably need to run `rake generate` first
 task :publish do
   `git checkout gh-pages`
   `git checkout master -- site`

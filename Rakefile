@@ -83,3 +83,12 @@ task :generate do
     system('compass compile')
   end
 end
+
+task :publish do
+  `git checkout gh-pages`
+  `git checkout master -- site`
+  `git add .`
+  `git commit -am "generated pages"`
+  `git push origin gh-pages`
+  `git checkout master`
+end

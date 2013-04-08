@@ -17,5 +17,4 @@ This little generater is for showing off all the organizers, coaches and attende
 
 ## Todo
 
-* Write a markdown generator for outputting the list in the Github repository
-* Kill this and create a Rails app?
+* Merge this into a real rails app!

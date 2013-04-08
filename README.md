@@ -2,6 +2,8 @@
 
 This little generater is for showing off all the organizers, coaches and attendees of the Rails Girls Switzerland movement.
 
+* [Basel, April 2013](http://railsgirlsswitzerland.github.io/attendees/site/2013_04_basel.html)
+
 ## How to setup a new event
 
 * Add the event to events.yml

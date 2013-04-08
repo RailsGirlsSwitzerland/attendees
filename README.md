@@ -13,12 +13,9 @@ This little generater is for showing off all the organizers, coaches and attende
 
 ## Publish a new event
 
-* After generating the event with `rake generate` checkout the gh-pages branch: `git checkout gh-pages`
-* run `git checkout master -- site`
-* and ship it `git push origin gh-pages`
+* run `rake publish`
 
 ## Todo
 
-* Improve the workflow to push to Github Pages
 * Write a markdown generator for outputting the list in the Github repository
 * Kill this and create a Rails app?

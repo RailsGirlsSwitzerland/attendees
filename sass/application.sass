@@ -3,6 +3,7 @@
 @import "font-awesome"
 
 $red: #d3360b
+$brown: #fdf9f0
 
 body
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
@@ -39,7 +40,7 @@ body
 
 .main
   padding: 40px 0
-  background: #fdf9f0 url("../images/bg-ruby.png") no-repeat top right
+  background: $brown + #070707 url("../images/bg-ruby.png") no-repeat top right
   background-position: 120% -150px
 
 .footer
@@ -54,14 +55,20 @@ body
 
 ul
   li
-    font-size: 14px
+    font-size: 13px
+    line-height: 15px
     width: 180px
     height: 50px
     margin: 0 20px 20px 0
+    padding: 10px
+    +border-radius(2px)
     img
       width: 50px
       height: 50px
       margin-right: 15px
+    &:hover
+      background: $brown - #111
+      +background(rgba($brown - #111, 0.5))
 
 .name
   display: block
@@ -74,7 +81,9 @@ h1
 
 a
   text-decoration: none
-  color: #444
+  color: $brown - #444
+  &:hover
+    color: $brown - #999
 
 .round
   +border-radius(100%)

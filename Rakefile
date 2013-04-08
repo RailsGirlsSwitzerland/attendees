@@ -70,7 +70,7 @@ task :generate do
         <div class="footer">
           <div class="wrapper">
             <div class="inner">
-              Fork me on <i class="icon-github"></i>
+              <a href='https://github.com/RailsGirlsSwitzerland/attendees'>Fork me on <i class="icon-github"></i></a>
             </div>
           </div>
         </div>

@@ -1,0 +1,89 @@
+@import "compass"
+@import "compass/reset"
+@import "font-awesome"
+
+$red: #d3360b
+$brown: #fdf9f0
+
+body
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-size: 16px
+  line-height: 18px
+  color: #222
+  background: #444
+
+.wrapper
+  width: 90%
+  margin: 0 auto
+  .inner
+    padding: 0 20px
+
+.left
+  float: left
+
+.right
+  float: right
+
+.clear
+  clear: both
+
+.header
+  background: $red
+  color: #fff
+  padding: 20px 0
+  border-bottom: 1px solid $red - #111
+  +text-shadow($red - #222 0 -1px 1px)
+  a
+    color: #fff
+    border-bottom: 1px dashed #fff
+    font-size: 14px
+
+.main
+  padding: 40px 0
+  background: $brown + #070707 url("../images/bg-ruby.png") no-repeat top right
+  background-position: 120% -150px
+
+.footer
+  padding: 20px 0
+  background: #444
+  color: #fff
+  font-size: 12px
+  text-align: right
+  +text-shadow(#222 0 -1px 1px)
+  a
+    color: #fff
+
+ul
+  li
+    font-size: 13px
+    line-height: 15px
+    width: 180px
+    height: 50px
+    margin: 0 20px 20px 0
+    padding: 10px
+    +border-radius(2px)
+    img
+      width: 50px
+      height: 50px
+      margin-right: 15px
+    &:hover
+      background: $brown - #111
+      +background(rgba($brown - #111, 0.5))
+
+.name
+  display: block
+  margin-bottom: 5px
+
+h1
+  font-size: 20px
+  font-weight: 600
+  margin: 10px 0 20px 0
+
+a
+  text-decoration: none
+  color: $brown - #444
+  &:hover
+    color: $brown - #999
+
+.round
+  +border-radius(100%)

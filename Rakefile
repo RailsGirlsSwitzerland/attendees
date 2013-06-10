@@ -7,7 +7,13 @@ end
 
 def generate_html_entry(person)
   output =  "\t<li class='left'>\n"
-  output += "\t\t<span class='avatar'><img src='http://www.gravatar.com/avatar/#{generate_gravatar_hash(person['email'])}?d=identicon' class='round left'></span>\n"
+  output += "\t\t<span class='avatar'>\n"
+  if person['avatar']
+    output += "\t\t\t<img src='#{person['avatar']}' class='round left'>"
+  else
+    output += "\t\t\t<img src='http://www.gravatar.com/avatar/#{generate_gravatar_hash(person['email'])}?d=identicon' class='round left'>\n"
+  end
+  output += "\t\t</span>\n"
   output += "\t\t<span class='name'>#{person['name']}</span>\n"
   output += "\t\t<span class='twitter'><a href='http://twitter.com/#{person['twitter']}'><i class='icon-twitter'></i></a></span>\n" if person['twitter']
   output += "\t\t<span class='email'><a href='mailto:#{person['email']}'><i class='icon-envelope-alt'></i></a></span>\n" if person['email']

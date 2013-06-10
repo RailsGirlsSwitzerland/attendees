@@ -9,7 +9,7 @@ def generate_html_entry(person)
   output =  "\t<li class='left'>\n"
   output += "\t\t<span class='avatar'>\n"
   if person['avatar']
-    output += "\t\t\t<img src='#{person['avatar']}' class='round left'>"
+    output += "\t\t\t<img src='#{person['avatar']}' class='round left'>\n"
   else
     output += "\t\t\t<img src='http://www.gravatar.com/avatar/#{generate_gravatar_hash(person['email'])}?d=identicon' class='round left'>\n"
   end
